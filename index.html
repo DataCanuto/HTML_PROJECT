@@ -14,17 +14,25 @@
         <img src="./assets/img/img-1.avif" alt="" width="100%" height="200px">
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#titulos ">Titulos</a></li>
-            <li><a href="#paragrafos ">Paragrafos</a></li>
-            <li><a href="#tags-semanticas ">Tags Semânticas</a></li>
-            <li><a href="#listas ">Listas</a></li>
-            <li><a href="#ancora-link ">Âncora de Link</a></li>
-            <li><a href="#imagens ">Imagens</a></li>
-            <li><a href="#main-content ">Main</a></li>
-        </ul>
-    </nav>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#main-content">Main</a></li>
+                <li><a href="#titulos">Titulos</a></li>
+                <li><a href="#paragrafos">Paragrafos</a></li>
+                <li><a href="#tags-semanticas">Tags Semânticas</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#ancora-link">Âncora de Link</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+
+                <li>
+                    <a href="#multimidia">Multimidia</a> </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
 
     <h2 id="main-content">Main tag</h2>
     <p>Main Content - Conteúdo principal da página, onde se encontra o conteúdo mais importante do site.</p>
@@ -96,6 +104,7 @@
         </aside>
 
         <h2 id="multimidia">Elementos Multimídia</h2>
+        <h3>Video</h3>
         <p>Autoplay: tenta reproduzir automaticamente</p>
         <p>Loop: repete o vídeo</p>
         <p>Muted: silencia o áudio</p>
@@ -103,14 +112,92 @@
         <p>Source: Especifica a fonte do conteúdo multimídia</p>
 
         <video>
+           
 
         </video>
+
+        <h3>
+            Audio
+        </h3>
+
+        <audio controls>
+            <source src="./assets/audio/Dinossauro.mp3" type="audio/mpeg">
+        </audio>
+
+
+
+        <div>
+            <h3>Form</h3>
+
+            <p>action</p>
+            <h4>Method: Get/ Post</h4>
+
+            <form action="" method="post">
+                <label for="">Nome</label>
+                <input type="text" name="txtNome" placeholder="Nome" required>
+                <br></br>
+                <label for="">Email</label>
+                <input type="text" name="txtEmail" placeholder="Email" required>
+                <br></br>
+                <label for="">Senha</label>
+                <input type="password" name="txtSenha" placeholder="Senha" required>
+                <br></br>
+                <label for="">Idade</label>
+                <input type="number" name="textIdade" placeholder="Idade" required>
+
+                <br></br>
+                <label for="">Data</label>
+                <input type="date" name="txtData" placeholder="Data" required>
+
+                <br></br>
+                <label for="">Ranger</label>
+                <input type="range" name="txtRange" placeholder="Informe o Range" required>
+
+                <br></br>
+                <label for="">Cor</label>
+                <input type="color" name="txtCor" placeholder="Cor" required>
+                <h4>CheckBox</h4>
+                <input type="checkbox" name="txtCheckBox" value="Opcao1">Opcão 1
+                <input type="checkbox" name="txtCheckBox" value="Opcao2">Opcão 2
+                <input type="checkbox" name="txtCheckBox" value="Opcao3">Opcão 3
+
+                <h4>Radio</h4>
+
+                <input type="radio" name="txtRadio" value="Opcao1">Opcão 1
+                <input type="radio" name="txtRadio" value="Opcao2">Opcão 2
+                <input type="radio" name="txtRadio" value="Opcao3">Opcão 3
+
+                <hr>
+
+                <h4>Text Área</h4>
+                <textarea name="txtResumo" placeholder="Big Text"></textarea>
+
+                <h4>Selection</h4>
+                <select name="txtSelecione" id="">
+                    <option value = "Opcao1">Opção 1</option>
+                    <option value = "Opcao2">Opção 2</option>
+                    <option value = "Opcao3">Opção 3</option>
+                </select>
+
+
+                <h4>Button</h4>
+                <p>Pode atribuir diversas funções</p>
+                <button>Botão</button> </form>
+
+            <h4>Submit</h4>
+
+            <input type="submit" name="txtEnviar" placeholder="Submit" value="Enviar">
+            <br>
+
+        </div>
+
+
     </main>
 
 
 
 
-    <h2 id="footer">Footer</h2>
+    <h2 id=" footer ">Footer</h2>
 
     <footer>
         <p>Rodapé</p>
