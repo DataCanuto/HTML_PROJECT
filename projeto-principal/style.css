@@ -1,6 +1,6 @@
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: rgb(104, 78, 179);
+        background-color: rgb(200, 200, 200);
     }
     
     div {
@@ -10,6 +10,10 @@
         padding: 20px 10px 5px 10px;
     }
     
+    header img {
+        border-radius: 20px;
+    }
+    
     nav {
         padding: 10px 10px 10px 10px;
         margin-bottom: 20px;
@@ -17,7 +21,6 @@
     
     nav a {
         color: black;
-        border: 1px solid black;
         text-decoration: none;
     }
     
@@ -48,9 +51,11 @@
     }
     
     h3 {
-        text-align: left;
+        text-align: center;
         font-weight: 400;
         padding: 10px;
         font-size: 20px;
         margin-bottom: 10px;
+        background-color: rgb(100, 100, 100);
+        border-radius: 20px;
     }
