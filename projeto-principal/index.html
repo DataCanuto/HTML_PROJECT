@@ -1,234 +1,58 @@
-<!DOCTYPE html>
+!!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-
-    <title>AULA HTML</title>
+    <title>Projeto HTML</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/img/img-1.avif" alt="" width="100%" height="200px">
+        <h1>Elementos HTML 5</h1>
+
+
     </header>
 
-    <div>
-        <nav>
+    <nav>
+
+    </nav>
+
+
+
+    <main>
+        <section>
+            <h2>Fundamentos do HTML 5</h2>
+
+            <P>O HTML5 - Hyper Text Markup Language - é a linguagem de marcação padrão para criar páginas web. Pensem nele omo a <strong>estrutura</strong> ou o <strong>esqueleto</strong> de qualquer site que vocês visitam</P>
+
+            <p>A versão 5 é a atual no mercado, e trouxe algumas novidades:</p>
             <ul>
-                <li><a href="#main-content">Main</a></li>
-                <li><a href="#titulos">Titulos</a></li>
-                <li><a href="#paragrafos">Paragrafos</a></li>
-                <li><a href="#tags-semanticas">Tags Semânticas</a></li>
-                <li><a href="#listas">Listas</a></li>
-                <li><a href="#ancora-link">Âncora de Link</a></li>
-                <li><a href="#imagens">Imagens</a></li>
-
-                <li>
-                    <a href="#multimidia">Multimidia</a> </a>
-                </li>
+                <li><strong>Recursos de APIs</strong> como armazenamento local (local storage), geolocalização, arrastar e soltar e web workers para processamento em segundo plano</li>
+                <li><strong>Melhor suporte nativo para multimidia</strong> como imagem, vídeo e áudio</li>
             </ul>
-        </nav>
-    </div>
+        </section>
 
-    <div id="corpo">
-        <main>
-            <h2 id="main-content">Main tag</h2>
-            <p>Main Content - Conteúdo principal da página, onde se encontra o conteúdo mais importante do site.</p>
-            <h1 id="titulo-principal">Aula HTML5</h1>
-            <h2 id="titulos ">Tipos de título h1... h6</h2>
-            <h1>Titulo 1</h1>
-            <h2>Titulo 2</h2>
-            <h3>Titulo 3</h3>
-            <h4>Titulo 4</h4>
-            <h5>Titulo 5</h5>
-            <h6>Titulo 6</h6>
-            <h2 id="paragrafos">Tipos de paragrafo tag &lt;p&gt;</h2>
-            <p>Parágrafo 1</p>
-            <p>Parágrafo 2</p>
-            <h3>Tags de quebra de linha (&lt;br&gt;, &lt;hr&gt;)</h3>
-            <p>Paragrafo 3<br>Espaço com chave &lt;br&gt;</p>
-            <p>Paragrafo 4
-                <hr>Quebra de linha com &lt;hr&gt;</p>
-            <h2 id="tags-semanticas">Tags Semânticas</h2>
-            <p><strong>Texto em negrito tag &lt;strong&gt;</strong></p>
-            <p><em>Texto em itálico tag &lt;em&gt;</em></p>
-            <h2 id="listas">Listas</h2>
-            <h3>Lista ordenada tag &lt;ol&gt;</h3>
-            <ol>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ol>
-            <h3>Lista não ordenada tag &lt;ul&gt;</h3>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-            </ul>
+        <section>
+            <h2>Estrutura essencial de um documento HTML5</h2>
+            <pre><code>
+                
+                !!DOCTYPE html>
+                <html lang="pt-br">
 
-            <h2 id="ancora-link">Âncora de Link tag &lt;a&gt;</h2>
-            <p><a href="https://www.google.com" target="_blank ">Visite o Google</a></p>
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Projeto HTML</title>
+                </head>
+            </code></pre>
 
 
+        </section>
+    </main>
 
-            <h2 id="imagens ">Imagens tag &lt;img&gt;</h2>
-
-            <img src="./assets/img/img-1.avif" alt="imgagem 1" width="200px" height="200px">
-            <img src="./assets/img/img-2.avif" alt="imagem 2" width="200px" height="200px">
-            <img src="./assets/img/img-3.jpg" alt="imagem 3" width="200px" height="200px">
-
-
-            <h2 id="article ">Article</h2>
-
-            <article>
-                Representa um conteúdo independente e auto-contido.
-            </article>
-
-            <h2 id="section">Section</h2>
-
-            <section>
-                <h3>Representa uma seção genérica de conteúdo.</h3>
-                <p>Saiba Mais</p>
-            </section>
-
-            <h2 id="aside">Aside</h2>
-
-            <aside>
-                <h3>Representa um conteúdo secundário ou complementar ao conteúdo principal.</h3>
-                <p>Anuncios</p>
-                <p>Glossários</p>
-            </aside>
-
-            <h2 id="multimidia">Elementos Multimídia</h2>
-            <h3>Video</h3>
-            <p>Autoplay: tenta reproduzir automaticamente</p>
-            <p>Loop: repete o vídeo</p>
-            <p>Muted: silencia o áudio</p>
-            <p>Poster: Imagem que aparece antes da mídia ser carregada</p>
-            <p>Source: Especifica a fonte do conteúdo multimídia</p>
-
-            <video>
-           
-
-        </video>
-
-            <h3>
-                Audio
-            </h3>
-
-            <audio controls>
-            <source src="./assets/audio/Dinossauro.mp3" type="audio/mpeg">
-        </audio>
-
-
-
-            <div>
-                <h3>Form</h3>
-
-                <p>action</p>
-                <h4>Method: Get/ Post</h4>
-
-                <form action="" method="post">
-                    <label for="">Nome</label>
-                    <input type="text" name="txtNome" placeholder="Nome" required>
-                    <br></br>
-                    <label for="">Email</label>
-                    <input type="text" name="txtEmail" placeholder="Email" required>
-                    <br></br>
-                    <label for="">Senha</label>
-                    <input type="password" name="txtSenha" placeholder="Senha" required>
-                    <br></br>
-                    <label for="">Idade</label>
-                    <input type="number" name="textIdade" placeholder="Idade" required>
-
-                    <br></br>
-                    <label for="">Data</label>
-                    <input type="date" name="txtData" placeholder="Data" required>
-
-                    <br></br>
-                    <label for="">Ranger</label>
-                    <input type="range" name="txtRange" placeholder="Informe o Range" required>
-
-                    <br></br>
-                    <label for="">Cor</label>
-                    <input type="color" name="txtCor" placeholder="Cor" required>
-                    <h4>CheckBox</h4>
-                    <input type="checkbox" name="txtCheckBox" value="Opcao1">Opcão 1
-                    <input type="checkbox" name="txtCheckBox" value="Opcao2">Opcão 2
-                    <input type="checkbox" name="txtCheckBox" value="Opcao3">Opcão 3
-
-                    <h4>Radio</h4>
-
-                    <input type="radio" name="txtRadio" value="Opcao1">Opcão 1
-                    <input type="radio" name="txtRadio" value="Opcao2">Opcão 2
-                    <input type="radio" name="txtRadio" value="Opcao3">Opcão 3
-
-                    <hr>
-
-                    <h4>Text Área</h4>
-                    <textarea name="txtResumo" placeholder="Big Text"></textarea>
-
-                    <h4>Selection</h4>
-                    <select name="txtSelecione" id="">
-                    <option value = "Opcao1">Opção 1</option>
-                    <option value = "Opcao2">Opção 2</option>
-                    <option value = "Opcao3">Opção 3</option>
-                </select>
-
-
-                    <h4>Button</h4>
-                    <p>Pode atribuir diversas funções</p>
-                    <button>Botão</button> </form>
-
-                <h4>Submit</h4>
-
-                <input type="submit" name="txtEnviar" placeholder="Submit" value="Enviar">
-                <br>
-
-            </div>
-            <div>
-                <h2>Elemento &lt;div&gt;</h2>
-                <h3>Id e Class</h3>
-                <ul>
-                    <li>Id: Elemento único</li>
-                    <li>Class: Elemento genérico</li>
-                </ul>
-
-                <h3>Exemplos de div</h3>
-                <ul>
-                    <li>&lt;div id="topo"&gt;&lt;/div&gt;</li>
-                    <li>&lt;div id="corpo"&gt;</li>
-                    <ul>
-                        <li>&lt;div id="menu"&gt;Menu&lt;/div&gt;</li>
-                        <li>&lt;div id="conteudo"&gt;Conteudo&lt;/div&gt;&lt;/div&gt;</li>
-                    </ul>
-                    <li>&lt;div id="rodape"&gt;Rodape&lt;/div&gt;</li>
-                </ul>
-            </div>
-
-
-        </main>
-    </div>
-
-    <div id="footer">
-        <h2 id=" footer ">Footer</h2>
-
-        <footer>
-            <p>Rodapé</p>
-            <p>&copy; 2026 Minha Página. Todos os direitos reservados. <strong>Pedro Canuto Dev</strong></p>
-        </footer>
-    </div>
-
-
-
-
-
-
+    <footer></footer>
 
 </body>
-
-</html>
 
 </html>
