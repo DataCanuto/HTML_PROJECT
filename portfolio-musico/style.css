@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    margin-inline: auto;
+}
+
+
+
+.inicio{
+    background-color: purple; 
+    height: auto;
+}
+
+.container{
+    padding: 10px;
+    margin: 10px auto;
+    width: min(100% - 20px, 72rem);
+    box-sizing: border-box;
+}
+
+#sobre{
+    text-align: justify;
+    border: solid 1px black;
+}
+
+#servicos{
+    border: solid 1px black;
+}
+
+#galeria{
+    border: solid 1px black;
+}
+
+#videos{
+    border: solid 1px black;
+}
+
+.center-title{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+#galeria .galeria-item img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#videos .col{
+    border: solid 1px black;
+    border-radius: 20px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+    margin-inline: auto;
+}
+
+#musicas{
+    border: solid 1px black;
+}
+
+footer{
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+

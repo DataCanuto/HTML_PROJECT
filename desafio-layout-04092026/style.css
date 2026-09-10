@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navbar{
+    background-color: rgba(50, 59, 72, 0.7);
+}
+
+.navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-decoration-color: aqua;
+}
+
+.nav-column{
+    background-color: rgba(100,100,100,0.3);
+    height: 100%;
+    
+}
+
+.nav-column .nav-link{
+    color: black;
+}
+
+.nav-column .nav-link:hover{
+    background-color: rgba(30,30,120,0.3);
+}
+
+.branco{
+    color: white;
+}
+
+.blue{
+    color:blue;
+}
+
+.col-10 h1{
+    color: black;
+}
+
+.card-price{
+    color: blue;
+    font-weight: 600;
+}
+
+footer .container-fluid{
+    background-color: rgba(50, 59, 72, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+footer p{
+    color: white;
+    margin: 0;
+}
