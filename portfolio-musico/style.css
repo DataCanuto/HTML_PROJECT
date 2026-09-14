@@ -1,9 +1,56 @@
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-main section{
+.hero {
+    box-sizing: border-box;
+    background: linear-gradient( to right, rgba(0, 80, 150, 0.98) 0%, rgba(0, 80, 150, 0.95) 40%, rgba(0, 80, 150, 0.70) 48%, rgba(0, 80, 150, 0.20) 60%, transparent 70%), url("./img/pedrocanuto.jpeg") right / cover no-repeat;
+    height: 600px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.hero .title {
+    display: flex;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+
+.hero .subtitle {
+    display: flex;
+    text-align: left;
+    color: white;
+    font-weight: 300;
+}
+
+.hero .service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 30%;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.hero .service-cards .btn {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .hero .service-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+main section {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -14,38 +61,24 @@ main section{
     margin-inline: auto;
 }
 
-
-
-.inicio{
-    background-color: purple; 
-    height: auto;
-}
-
-.container{
-    padding: 10px;
-    margin: 10px auto;
-    width: min(100% - 20px, 72rem);
-    box-sizing: border-box;
-}
-
-#sobre{
+#sobre {
     text-align: justify;
     border: solid 1px black;
 }
 
-#servicos{
+#servicos {
     border: solid 1px black;
 }
 
-#galeria{
+#galeria {
     border: solid 1px black;
 }
 
-#videos{
+#videos {
     border: solid 1px black;
 }
 
-.center-title{
+.center-title {
     text-align: center;
     padding: 10px;
     margin: 5px;
@@ -58,8 +91,7 @@ main section{
     display: block;
 }
 
-
-#videos .col{
+#videos .col {
     border: solid 1px black;
     border-radius: 20px;
     height: auto;
@@ -68,21 +100,14 @@ main section{
     margin-inline: auto;
 }
 
-#musicas{
+#musicas {
     border: solid 1px black;
 }
 
-footer{
+footer {
     border: solid 1px black;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
 }
-
-
-
-
-
-
-

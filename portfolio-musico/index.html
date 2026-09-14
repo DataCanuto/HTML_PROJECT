@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Pedro Canuto Músico</title>
 </head>
@@ -18,26 +15,20 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../../pedrocanuto.musico.app/frontend/public/favicon.svg" alt="Bootstrap" width="30"
-                        height="24">
+                    <img src="" alt="logo" width="30" height="24">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Início</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Serviços
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Portfólio
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Eventos</a></li>
@@ -59,9 +50,12 @@
                                 <li><a class="dropdown-item" href="#">Sound Healing</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Biografia</a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Galeria
                             </a>
                             <ul class="dropdown-menu">
@@ -82,75 +76,60 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Pesquise</button>
-                    </form>
                 </div>
             </div>
         </nav>
 
-        <section class="inicio">
-            <div class="container-fluid text-center">
-
+        <section class="hero">
+            <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3">
-                            Musicalização Infantil
+                        <div class="col-4">
+                            <h1 class="title">Pedro Canuto Músico</h1>
+                            <p class="subtitle">Mais de 15 anos de investigação e atuação em diversos campos da música.</p>
                         </div>
-                        <div class="col-3">
-                            Musicoterapia
-                        </div>
-                        <div class="col-3">
-                            Eventos
-                        </div>
+
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            Aulas de Instrumentos
-                        </div>
-                        <div class="col-3">
-                            Jornada Percussiva
-                        </div>
-                        <div class="col-3">
-                            Yoga Sonorointrospectiva
-                        </div>
+
+                    <div class="service-cards">
+                        <button type="button" class="btn btn-primary">Musicalização Infantil</button>
+                        <button type="button" class="btn btn-primary">Eventos</button>
+                        <button type="button" class="btn btn-primary">Aulas de Instrumentos</button>
+                        <button type="button" class="btn btn-primary">Musicoterapia</button>
+                        <button type="button" class="btn btn-primary">Ritos Sonoros</button>
+                        <button type="button" class="btn btn-primary">Jornada Percussiva</button>
                     </div>
                 </div>
-
-
-
-
-
-            </div>
 
         </section>
     </header>
     <main>
 
-        <section id="sobre">
+        <section id="musicalizacao">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Pedro Canuto</h2>
-                        <p>Músico, multi-instrumentista, compositor, educador musical e musicoterapeuta.
+                        <h2>Musicalização Infantil</h2>
+                        <p>8 anos de experiência com crianças de 6 mesesa 6 anos.
                         </p>
-                        <p>Dedica-se ao estudo do desenvolvimento humano através da música, promovendo aulas, eventos,
-                            oficinas, vivências e palestras.</p>
-                        <p>Educador musical desde 2018, lecionou em escolas de Salvador, adquirindo experiência com uma
-                            grande diversidade de público</p>
-                        <p>Experiência com grupos de crianças típicas e atípicas</p>
-                        <p>Atualmente realiza atendimentos musicais em diversas modalidades.</p>
+                        <p>A <strong>Musicalização Infantil</strong> é uma forma de alfabetização musical que proporciona à criançao contato com a música por meio de:</p>
+                        <ul>
+                            <li>Vivências Lúdicas afetivas e estruturadas.</li>
+                            <li>Brincadeiras, canções, movimentos, exploração de sons e instrumentos.</li>
+                        </ul>
+                        <p>Ao mesmo tempo em que promove essa iniciaão musical, contribui para o desenvolvimento de habilidades naturais da infância como memória, coordenação motora, percepção, atenção, criatividade, desenvolvimento da fala e da comunicação.</p>
+                        <p>Experiência de com crianças típicas e atípicas</p>
+                        <p>Aulas particulares em domicílio, atendimento em grupo e individual.</p>
 
-                        saiba mais*
-
+                        <button type="button" class="btn btn-primary">Saiba Mais</button>
                     </div>
+
                     <div class="col">
-                        <img src="./img/IMG_4686.JPEG" width=100%; class="rounded float-start" alt="...">
+                        <img src="./img/IMG_4686.JPEG" width=100%; class="rounded float-start" alt="musicoterapeuta">
                     </div>
                 </div>
             </div>
@@ -163,14 +142,46 @@
 
                     </div>
                     <div class="col">
-                        <h2>Multi-instrumentista</h2>
-                        <p>Aos 12 anos de idade iniciei meus estudos no violão, instrumento o qual me dedico até hoje
-                            como principal em meu trabalho</p>
+                        <h2>Musicoterapia</h2>
+                        <p>A <strong>Musicoterapia</strong> utiliza a música e seus elementos como ferramentas terapeuticas para promover saúde, expressão e qualidade de vida.</p>
 
-                        <p>Autodidata, acumulei conhecimentos fundamentais da teoria musical que me possibilitam hoje me
-                            apresentar com: violão, guitarra, baixo elétrico, ukulele, bandolim,
-                            cavaquinho, flauta doce, flauta xamânca, escaleta, teclado, pandeiro, cajon, djembe,
-                            atabaque., intérprete vocal, além de animador infantil.</p>
+                        <p>A partir de uma abordagem individualizada, desenvolvo experiências musicais que consideram a identidade sonora, necessidades e possibilidades de cada pessoa utilizando recursos como improvisação, prática instrumental e escuta receptiva.</p>
+
+                        <p>Atendimentos em domicílio.</p>
+
+                        <p>Experiência com diversos públicos:</p>
+                        <ul>
+                            <li>
+                                <strong>Crianças</strong> com TEA, T21, TDAH.</li>
+                            <li><strong>Jovens e adultos</strong> com demandas de depressão, ansiedade e concentração.</li>
+                            <li><strong>Idosos</strong> com casos de Alzheimer, Parkinson, solidão e outras condições.</li>
+                        </ul>
+                        <p>Favorecer o desenvolvimento, autonomia e bem estar.</p>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Ritos Sonoros</h3>
+                            <p>Condução sonora com instrumentos musicais de frequência terapeutica.</p>
+                            <p>Participação em aulas de yoga, rituais e sessões de sound-healing</p>
+                            <ul>
+                                <li>Flauta Xamânica e Bansuri</li>
+                                <li>Sinos e Tigelas</li>
+                            </ul>
+                            <p>Experiências de imersão e escuta que utilizam o som como elemento de relaxamento presença e conexão.
+                            </p>
+                            <p></p>
+                            <p>Aulas particulares em domicílio, atendimento em grupo e individual.</p>
+
+                            <button type="button" class="btn btn-primary">Saiba Mais</button>
+                        </div>
+
+                        <div class="col">
+                            <img src="./img/IMG_4686.JPEG" width=100%; class="rounded float-start" alt="musicoterapeuta">
+                        </div>
                     </div>
                 </div>
 
@@ -180,12 +191,9 @@
                         <div class="col">
                             <h2>Musicoterapeuta & Educador</h2>
 
-                            <p>Durante a minha formação em musicoterapia, tive a oportunidade de descobrir o valor da
-                                improvisação e da libertação através das experiências musicais, facilitada por eventos e
-                                instrumentos musicais.</p>
-                            <p>Atendo crianças, jovens e idosos com diferentes situações, que buscam um momento musical
-                                para melhorar a sua qualidade de vida, seja através de um evento único como um
-                                aniversário ou casamento, seja através de um processo de aulas / sessões semanais.</p>
+                            <p>Durante a minha formação em musicoterapia, tive a oportunidade de descobrir o valor da improvisação e da libertação através das experiências musicais, facilitada por eventos e instrumentos musicais.</p>
+                            <p>Atendo crianças, jovens e idosos com diferentes situações, que buscam um momento musical para melhorar a sua qualidade de vida, seja através de um evento único como um aniversário ou casamento, seja através de um processo de
+                                aulas / sessões semanais.</p>
                             <p>Experiência em: <strong>TEA, T21, TDA, TDAH, Alzheimer, Depressão, Anciedade, Público
                                     geral.</strong></p>
                         </div>
@@ -208,12 +216,9 @@
                             <div class="col">
                                 <h2>Jornada Percussiva</h2>
                                 <p>Oficinas de percussão voltadas para público com ou sem experiência prévia</p>
-                                <p>A Roda de Tambores é uma experiência única que envolve o exercício de escutar e
-                                    manter o ritmo da roda.</p>
-                                <p>O projeto teve início em 2018 no espaço terapeutico Casa da Sil, reunindo grupos de 5
-                                    a 15 participantes.</p>
-                                <p>A conexão do ser humano com a percussão é única. Durante a dinâmica, trabalhamos
-                                    ritmos, levadas, tecnicas e expressões individuais.</p>
+                                <p>A Roda de Tambores é uma experiência única que envolve o exercício de escutar e manter o ritmo da roda.</p>
+                                <p>O projeto teve início em 2018 no espaço terapeutico Casa da Sil, reunindo grupos de 5 a 15 participantes.</p>
+                                <p>A conexão do ser humano com a percussão é única. Durante a dinâmica, trabalhamos ritmos, levadas, tecnicas e expressões individuais.</p>
                             </div>
                         </div>
                     </div>
@@ -225,8 +230,7 @@
                                 <h2>Yoga SonoroIntrospectiva</h2>
 
                                 <p>Projeto desenvolvido em parceria com a professora Luciana Tambone</p>
-                                <p>Uso de instrumentos musicais de frequência terapeutica durante prática de yoga. Pausa
-                                    introspectiva: contemplação do silêncio e o som divino da <strong>flauta
+                                <p>Uso de instrumentos musicais de frequência terapeutica durante prática de yoga. Pausa introspectiva: contemplação do silêncio e o som divino da <strong>flauta
                                         xamânica</strong></p>
                             </div>
 
@@ -245,23 +249,17 @@
                 <div class="accordion" id="servicosAccordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#servicoMusicalizacao" aria-expanded="true"
-                                aria-controls="servicoMusicalizacao">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#servicoMusicalizacao" aria-expanded="true" aria-controls="servicoMusicalizacao">
                                 Musicalização Infantil
                             </button>
                         </h2>
-                        <div id="servicoMusicalizacao" class="accordion-collapse collapse show"
-                            data-bs-parent="#servicosAccordion">
+                        <div id="servicoMusicalizacao" class="accordion-collapse collapse show" data-bs-parent="#servicosAccordion">
                             <div class="accordion-body">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col">
                                             <p>
-                                                <strong>Vivências musicais para crianças de 6 meses a 6 anos.</strong>
-                                                Aulas
-                                                particulares individuais, em grupo, eventos temáticos, oficinas e
-                                                palestras.
+                                                <strong>Vivências musicais para crianças de 6 meses a 6 anos.</strong> Aulas particulares individuais, em grupo, eventos temáticos, oficinas e palestras.
                                             </p>
                                             <button type="button" class="btn btn-info">Saiba mais...</button>
                                         </div>
@@ -275,23 +273,17 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#servicoInstrumento" aria-expanded="false"
-                                aria-controls="servicoInstrumento">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicoInstrumento" aria-expanded="false" aria-controls="servicoInstrumento">
                                 Aulas de Instrumento
                             </button>
                         </h2>
-                        <div id="servicoInstrumento" class="accordion-collapse collapse"
-                            data-bs-parent="#servicosAccordion">
+                        <div id="servicoInstrumento" class="accordion-collapse collapse" data-bs-parent="#servicosAccordion">
                             <div class="accordion-body">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col">
                                             <p>
-                                                <strong>Aulas personalizadas para seu nível e interesse.</strong>
-                                                Aulas
-                                                particulares individuais, em grupo, oficinas e
-                                                palestras.
+                                                <strong>Aulas personalizadas para seu nível e interesse.</strong> Aulas particulares individuais, em grupo, oficinas e palestras.
                                             </p>
                                             <button type="button" class="btn btn-info">Saiba mais...</button>
                                         </div>
@@ -308,64 +300,52 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                         <td>Violão</td>
                                                         <td>Cajon</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                         <td>Guitarra</td>
                                                         <td>Pandeiro</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                         <td>Baixo</td>
                                                         <td>Atabaque</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                         <td>Ukulele</td>
                                                         <td>Djembê</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                         <td>Bandolim</td>
                                                         <td>Derbak</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
 
                                                         <td>Cavaquinho</td>
                                                         <td>Agogô</td>
-                                                        <td><img class="" alt=""
-                                                                style="width: 30px; height: 30px; background-color: black;">
+                                                        <td><img class="" alt="" style="width: 30px; height: 30px; background-color: black;">
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -379,14 +359,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#servicoMusicoterapia" aria-expanded="false"
-                                aria-controls="servicoMusicoterapia">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicoMusicoterapia" aria-expanded="false" aria-controls="servicoMusicoterapia">
                                 Musicoterapia
                             </button>
                         </h2>
-                        <div id="servicoMusicoterapia" class="accordion-collapse collapse"
-                            data-bs-parent="#servicosAccordion">
+                        <div id="servicoMusicoterapia" class="accordion-collapse collapse" data-bs-parent="#servicosAccordion">
                             <div class="accordion-body">
 
 
@@ -399,13 +376,11 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#servicoEventos" aria-expanded="false" aria-controls="servicoEventos">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#servicoEventos" aria-expanded="false" aria-controls="servicoEventos">
                                 Eventos
                             </button>
                         </h2>
-                        <div id="servicoEventos" class="accordion-collapse collapse"
-                            data-bs-parent="#servicosAccordion">
+                        <div id="servicoEventos" class="accordion-collapse collapse" data-bs-parent="#servicosAccordion">
                             <div class="accordion-body">
 
 
@@ -424,30 +399,24 @@
                                             <div class="accordion" id="eventosAccordion">
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#eventoUm"
-                                                            aria-expanded="false" aria-controls="eventoUm">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventoUm" aria-expanded="false" aria-controls="eventoUm">
                                                             Roda de Musicalização Infantil
                                                         </button>
                                                     </h2>
-                                                    <div id="eventoUm" class="accordion-collapse collapse"
-                                                        data-bs-parent="#eventosAccordion">
+                                                    <div id="eventoUm" class="accordion-collapse collapse" data-bs-parent="#eventosAccordion">
                                                         <div class="accordion-body">
                                                             <div class="container">
                                                                 <div class="row">
                                                                     <div class="col">
                                                                         <p>
                                                                             <strong>Vivências musicais para crianças de
-                                                                                6 meses a 6 anos.</strong>
-                                                                            Momentos únicos de vivências com
-                                                                            instrumentos musicais, repertório único
+                                                                                6 meses a 6 anos.</strong> Momentos únicos de vivências com instrumentos musicais, repertório único
                                                                         </p>
                                                                         <button type="button" class="btn btn-info">Saiba
                                                                             mais...</button>
                                                                     </div>
                                                                     <div class="col">
-                                                                        <img src="..." class="rounded float-start"
-                                                                            alt="...">
+                                                                        <img src="..." class="rounded float-start" alt="...">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -456,25 +425,18 @@
                                                 </div>
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#eventoDois"
-                                                            aria-expanded="false" aria-controls="eventoDois">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventoDois" aria-expanded="false" aria-controls="eventoDois">
                                                             Brincatocadeira - Animação musical para a família inteira
                                                         </button>
                                                     </h2>
-                                                    <div id="eventoDois" class="accordion-collapse collapse"
-                                                        data-bs-parent="#eventosAccordion">
+                                                    <div id="eventoDois" class="accordion-collapse collapse" data-bs-parent="#eventosAccordion">
                                                         <div class="accordion-body">
                                                             <div class="container">
                                                                 <div class="row">
                                                                     <div class="col">
                                                                         <p>
                                                                             <strong>Aulas personalizadas para seu nível
-                                                                                e interesse.</strong>
-                                                                            Aulas
-                                                                            particulares individuais, em grupo, oficinas
-                                                                            e
-                                                                            palestras.
+                                                                                e interesse.</strong> Aulas particulares individuais, em grupo, oficinas e palestras.
                                                                         </p>
                                                                         <button type="button" class="btn btn-info">Saiba
                                                                             mais...</button>
@@ -491,14 +453,11 @@
                                                 </div>
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#eventoTres"
-                                                            aria-expanded="false" aria-controls="eventoTres">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventoTres" aria-expanded="false" aria-controls="eventoTres">
                                                             Música ao Vivo
                                                         </button>
                                                     </h2>
-                                                    <div id="eventoTres" class="accordion-collapse collapse"
-                                                        data-bs-parent="#eventosAccordion">
+                                                    <div id="eventoTres" class="accordion-collapse collapse" data-bs-parent="#eventosAccordion">
                                                         <div class="accordion-body">
                                                             <strong>This is the third item’s accordion body.</strong>
                                                         </div>
@@ -506,14 +465,11 @@
                                                 </div>
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header">
-                                                        <button class="accordion-button collapsed" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#eventoQuatro"
-                                                            aria-expanded="false" aria-controls="eventoQuatro">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eventoQuatro" aria-expanded="false" aria-controls="eventoQuatro">
                                                             Participação como músico convidado
                                                         </button>
                                                     </h2>
-                                                    <div id="eventoQuatro" class="accordion-collapse collapse"
-                                                        data-bs-parent="#eventosAccordion">
+                                                    <div id="eventoQuatro" class="accordion-collapse collapse" data-bs-parent="#eventosAccordion">
                                                         <div class="accordion-body">
                                                             <div class="container">
                                                                 <div class="row">
@@ -554,8 +510,7 @@
                         <div class="carousel-item active">
                             <div class="row g-2 mb-2">
                                 <div class="col-4 galeria-item">
-                                    <img src="./img/animacoes/dj danilo - verticala.png" class="d-block w-100"
-                                        alt="...">
+                                    <img src="./img/animacoes/dj danilo - verticala.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="col-8 galeria-item">
                                     <img src="./img/animacoes/publico-verao.png" class="d-block w-100" alt="...">
@@ -577,8 +532,7 @@
                                     <img src="./img/quadrilha brincadeira.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="col-4 galeria-item">
-                                    <img src="./img/musicalizacao/aniverasrio mavi 02 anos/IMG_4785.JPEG"
-                                        class="d-block w-100" alt="...">
+                                    <img src="./img/musicalizacao/aniverasrio mavi 02 anos/IMG_4785.JPEG" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <div class="row g-2">
@@ -594,23 +548,19 @@
                         <div class="carousel-item">
                             <div class="row g-2 mb-2">
                                 <div class="col-4 galeria-item">
-                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-2.jpg" class="d-block w-100"
-                                        alt="...">
+                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-2.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="col-8 galeria-item">
-                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-banda-.JPEG"
-                                        class="d-block w-100" alt="...">
+                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-banda-.JPEG" class="d-block w-100" alt="...">
                                 </div>
                             </div>
 
                             <div class="row g-2">
                                 <div class="col-8 galeria-item">
-                                    <img src="./img/musicalizacao/aniversario bento 06 anos/IMG_5203.JPEG"
-                                        class="d-block w-100" alt="...">
+                                    <img src="./img/musicalizacao/aniversario bento 06 anos/IMG_5203.JPEG" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="col-4 galeria-item">
-                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-1.jpg" class="d-block w-100"
-                                        alt="...">
+                                    <img src="./img/musicalizacao/brincatocadeira/carnaval-1.jpg" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -621,8 +571,7 @@
                                 <img src="./img/quadrilha brincadeira.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="col-4 galeria-item">
-                                <img src="./img/musicalizacao/aniverasrio mavi 02 anos/IMG_4785.JPEG"
-                                    class="d-block w-100" alt="...">
+                                <img src="./img/musicalizacao/aniverasrio mavi 02 anos/IMG_4785.JPEG" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <div class="row g-2">
@@ -634,13 +583,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -655,23 +602,17 @@
                 <div class="row">
                     <div class="col col-lg-4">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/tCu_FEV8r4E" title="Vídeo 1"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/tCu_FEV8r4E" title="Vídeo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col col-lg-4">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/VdSeChOdqHY" title="Vídeo 2"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/VdSeChOdqHY" title="Vídeo 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="col col-lg-4">
                         <div class="ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_3" title="Vídeo 3"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID_3" title="Vídeo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -683,14 +624,11 @@
             <div class="accordion" id="musicasAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#albumBrincatocadeira" aria-expanded="true"
-                            aria-controls="albumBrincatocadeira">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#albumBrincatocadeira" aria-expanded="true" aria-controls="albumBrincatocadeira">
                             Brincatocadeira - Músicas para brincar com a família inteira
                         </button>
                     </h2>
-                    <div id="albumBrincatocadeira" class="accordion-collapse collapse show"
-                        data-bs-parent="#musicasAccordion">
+                    <div id="albumBrincatocadeira" class="accordion-collapse collapse show" data-bs-parent="#musicasAccordion">
                         <div class="accordion-body">
                             <table class="table">
                                 <thead>
@@ -789,9 +727,7 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#albumJornadaSonora" aria-expanded="false"
-                            aria-controls="albumJornadaSonora">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#albumJornadaSonora" aria-expanded="false" aria-controls="albumJornadaSonora">
                             Jornada Sonora - Instrumentos Orgânicos e Sons Meditativos
                         </button>
                     </h2>
@@ -838,8 +774,7 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#albumTres" aria-expanded="false" aria-controls="albumTres">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#albumTres" aria-expanded="false" aria-controls="albumTres">
                             Covers
                         </button>
                     </h2>
@@ -901,5 +836,7 @@
     </footer>
 
 </body>
+
+</html>
 
 </html>
