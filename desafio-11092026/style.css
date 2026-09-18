@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.navbar-nav .nav-link {
+    color: darkblue;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    text-decoration-color: aqua;
+}
+
+.navbar-nav .nav-link:active {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.hero-bg {
+    background-image: linear-gradient(
+        to right,
+            rgba(0, 80, 150, 0.95) 0%,
+            rgba(0, 80, 150, 0.85) 35%,
+            rgba(0, 80, 150, 0.45) 55%,
+            rgba(0, 80, 150, 0) 75%),
+            url(images\ \(3\).jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    color:white;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: 48px;
+    color: rgba(0, 80, 150, 0.95);
+    background-color: #f0f4f8;
+}
+
+.hero-bg .col-3{
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+.hero-bg p{
+    font-size: 20px;
+}
+
+
+
+.branco {
+    color: darkblue;
+}
+
+h1{
+    font-weight: 700;
+    font-size:48px;
+}
+
+
+
+
+
+#contato{
+    background-color: darkblue;
+    color: white;
+    padding-top: 10px;
+    
+}
+
+#contato ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#contato ul li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+#contato ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#contato ul li a:hover{
+    text-decoration: underline;
+}
+
+#contato ul li i{
+    color: aqua;
+}
+
+.blue {
+    color: blue;
+}
+
+
+
+footer .container-fluid {
+    background-color: rgba(50, 59, 72, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+footer p {
+    color: white;
+    margin: 0;
+}
