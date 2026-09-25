@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadoras</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>Calculadoras App</div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#calculadora-imc">Calculadora IMC</a>
+                    </li>
+                    <li><a href="#calculadora-basica">Calculadora Básica</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculadora-imc">
+            <div class="calculadora-container">
+                <h2>Calculadora IMC</h2>
+
+                <form id="form-imc" class="form">
+                    <label for="peso-imc">Peso (KG)</label>
+                    <input type="number" id="peso-imc" name="peso" step="0.01" required>
+
+                    <label for="altura-imc">Altura (Metros)</label>
+                    <input type="number" id="altura-imc" name="altura" step="0.01" required>
+
+                    <button type="submit" class="btn-calcular">Calcular</button>
+
+                    <label for="resultado-imc">Resultado:</label>
+                    <input type="text" id="resultado-imc" name="resultado" readonly>
+                </form>
+            </div>
+        </section>
+
+        <section id="calculadora-basica">
+            <div class="calculadora-container">
+                <h2>Calculadora Básica</h2>
+
+                <form id="form-basica" class="form">
+                    <label for="n1">Número 1</label>
+                    <input type="number" id="n1" name="n1" step="0.01" required>
+
+                    <label for="operacao">Operação:</label>
+                    <select id="operacao">
+                        <option value="1">Somar</option>
+                        <option value="2">Subtrair</option>
+                        <option value="3">Multiplicar</option>
+                        <option value="4">Dividir</option>
+                    </select>
+
+                    <label for="n2">Número 2</label>
+                    <input type="number" id="n2" name="n2" step="0.01" required>
+
+                    <button type="submit" class="btn-calcular">Calcular</button>
+
+                    <label for="resultado-calculo">Resultado:</label>
+                    <input type="text" id="resultado-calculo" name="resultado" readonly>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
