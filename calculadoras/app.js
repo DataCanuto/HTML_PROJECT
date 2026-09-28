@@ -2,11 +2,31 @@ function calcularImc(peso, altura) {
     return peso / (altura * altura);
 }
 
+function classificarImc(imc) {
+
+    if (imc < 18.5) {
+        return 'Abaixo do peso normal'
+    } else if (imc < 24.9) {
+        return 'Peso normal'
+    } else if (imc < 29.9) {
+        return 'Excesso de peso'
+    } else if (imc < 34.9) {
+        return 'Obesidade classe I'
+    } else if (imc < 39.9) {
+        return 'Obesidade classe II'
+    } else {
+        return 'Obesidade classe III'
+    }
+
+}
+
 const formImc = document.getElementById('form-imc');
 const pesoInput = document.getElementById('peso-imc');
 const alturaInput = document.getElementById('altura-imc');
 
 const resultadoInput = document.getElementById('resultado-imc');
+
+const classificacaoInput = document.getElementById('classificacao-imc');
 
 formImc.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -15,8 +35,14 @@ formImc.addEventListener('submit', (event) => {
     const altura = parseFloat(alturaInput.value);
 
     const imc = calcularImc(peso, altura);
-    resultadoInput.value = imc.toFixed(2);
+
+    event.submitter.id === 'btn-calcular' ? resultadoInput.value = imc.toFixed(2) : event.submitter.id === 'btn-classificacao' ? classificacaoInput.value = classificarImc(imc) : null;
+
+
+
 });
+
+
 
 
 function calcular(n1, n2, op) {
